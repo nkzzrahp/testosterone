@@ -4,6 +4,7 @@ From:ubuntu:latest
 %post
 # Tommy the Tonsil
 apt-get update
+apt-get install curl
 echo "Hello!"
-/bin/sh -c "while true; curl -v google.com; sleep 60; echo "looped!"; done"
+/bin/sh -c "while true ; do curl -v google.com ; sleep 60; echo "------------ Looped ------------" ; done"
 echo "Goodbye!"
