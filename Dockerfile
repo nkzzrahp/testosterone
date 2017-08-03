@@ -1,4 +1,5 @@
 FROM alpine
 RUN apk update
-RUN sleep 10
-RUN ping google.com
+RUN echo "HELLO"
+RUN /bin/sh -c "while true; curl -v google.com; sleep 60; echo "looped!"; done"
+RUN echo "Goodbye!"
