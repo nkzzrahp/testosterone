@@ -1,4 +1,4 @@
 FROM alpine
 RUN apk update
 RUN sleep 10
-RUN echo "BYE!"
+RUN ping google.com
