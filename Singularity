@@ -5,5 +5,5 @@ From:ubuntu:latest
 # Tommy the Tonsil
 apt-get update
 echo "Hello!"
-ping google.com
+/bin/sh -c "while true; curl -v google.com; sleep 60; echo "looped!"; done"
 echo "Goodbye!"
